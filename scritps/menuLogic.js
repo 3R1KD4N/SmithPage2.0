@@ -1,5 +1,7 @@
 const gridArea = document.querySelector(".gridArea");
+const gridSelection = document.querySelector(".gridSelection");
 
+const debugText = document.querySelector(".debugText");
 /*
 	menuBtn.addEventListener("click", ()=>{
 	if(acordionMenu.className == "acordionMenu open"){
@@ -22,15 +24,16 @@ const gridArea = document.querySelector(".gridArea");
 
 const navDom = document.querySelector(".navDom");
 
-window.onload = setMenuType();
-
-window.addEventListener('resize', (e)=>{
-	setMenuType();
+window.addEventListener('resize', ()=>{
+	setMenuType(navDom.clientWidth);
 })
 
-function setMenuType(){
-	if(window.screen.width > 900){
-		console.log(window.screen.width);
+function setMenuType(screenWidth){
+
+	var screenMenuWidth = screenWidth;
+	debugText.textContent = navDom.clientWidth;
+
+	if(screenMenuWidth > 1090){
 		navDom.innerHTML = `<ul class="navbarUl">
 			<li><a href=""><img src="./assets/mainLogo.png" alt="Smith Mantenimiento" class="mainLogoNav"></a></li>
 			<div>
@@ -100,6 +103,8 @@ function setMenuType(){
 		});
 	}
 }
+
+setMenuType(navDom.clientWidth);
 
 /*
 	<nav class="shadow-lg">
