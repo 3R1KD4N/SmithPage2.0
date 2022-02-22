@@ -44,20 +44,20 @@ function setMenuType(screenWidth){
 
 	if(screenMenuWidth > 1090){
 		navDom.innerHTML = `<ul class="navbarUl">
-			<li><a href=""><img src="./assets/mainLogo.png" alt="Smith Mantenimiento" class="mainLogoNav"></a></li>
+			<li><a href="./index.html"><img src="./assets/mainLogo.png" alt="Smith Mantenimiento" class="mainLogoNav"></a></li>
 			<div>
 				<ul class="responiveLUl">
 					<li><a href="./aboutUs.html"><h2 class="menuTitle">Sobre Nosotros</h2></a></li>
-                    <li><a href=""><h2 class="menuTitle">Servicios</h2></a></li>
+                    <li><a href="./services.html"><h2 class="menuTitle">Servicios</h2></a></li>
                     <li><a href=""><h2 class="menuTitle">Rational MTY</h2></a></li>
-                    <li><a href=""><h2 class="menuTitle">Contacto</h2></a></li>
+                    <li><a href="./contact.html"><h2 class="menuTitle">Contacto</h2></a></li>
 				</ul>
 			</div>
 		</ul>`;
 	}else{
 		navDom.innerHTML = `
 			<ul class="navbarUl">
-			<li><a href=""><img src="./assets/mainLogo.png" alt="Smith Mantenimiento" class="mainLogoNav"></a></li>
+			<li><a href="./index.html"><img src="./assets/mainLogo.png" alt="Smith Mantenimiento" class="mainLogoNav"></a></li>
 			<li><img src="./assets/menuButton.png" alt="menu" class="menuButton" id="menuBtn"></li>
 		</ul>
 		<div class="acordionMenu close">
@@ -69,7 +69,7 @@ function setMenuType(screenWidth){
 					</a>
 				</li>
 				<li class="acordionItem noVisible">
-					<a href="./servicios.html">
+					<a href="./services.html">
 						<h3 class="h3Text">Servicios</h3>
 						<div class="divisionBar"></div>
 					</a>
@@ -81,7 +81,7 @@ function setMenuType(screenWidth){
 					</a>
 				</li>
 				<li class="acordionItem noVisible">
-					<a href="">
+					<a href="./contact.html">
 						<h3 class="h3Text">Contacto</h3>
 					</a>
 				</li>
@@ -113,5 +113,8 @@ function setMenuType(screenWidth){
 	}
 }
 
+window.addEventListener("resize", ()=>{
+	setMenuType(navDom.clientWidth);
+})
 
 setMenuType(navDom.clientWidth);

@@ -14,10 +14,10 @@ function setMenuType(screenWidth){
 			<li><a href="./index.html"><img src="./assets/mainLogo.png" alt="Smith Mantenimiento" class="mainLogoNav"></a></li>
 			<div>
 				<ul class="responiveLUl">
-					<li><a href="./aboutUs"><h2 class="menuTitle">Sobre Nosotros</h2></a></li>
-                    <li><a href=""><h2 class="menuTitle">Servicios</h2></a></li>
+					<li><a href="./aboutUs.html"><h2 class="menuTitle">Sobre Nosotros</h2></a></li>
+                    <li><a href="./services.html"><h2 class="menuTitle">Servicios</h2></a></li>
                     <li><a href=""><h2 class="menuTitle">Rational MTY</h2></a></li>
-                    <li><a href=""><h2 class="menuTitle">Contacto</h2></a></li>
+                    <li><a href="./contact.html"><h2 class="menuTitle">Contacto</h2></a></li>
 				</ul>
 			</div>
 		</ul>`;
@@ -36,7 +36,7 @@ function setMenuType(screenWidth){
 					</a>
 				</li>
 				<li class="acordionItem noVisible">
-					<a href="./servicios.html">
+					<a href="./services.html">
 						<h3 class="h3Text">Servicios</h3>
 						<div class="divisionBar"></div>
 					</a>
@@ -48,7 +48,7 @@ function setMenuType(screenWidth){
 					</a>
 				</li>
 				<li class="acordionItem noVisible">
-					<a href="">
+					<a href="./contact.html">
 						<h3 class="h3Text">Contacto</h3>
 					</a>
 				</li>
@@ -80,6 +80,7 @@ function setMenuType(screenWidth){
 	}
 }
 
-window.onload = ()=>{
+setMenuType(navDom.clientWidth);
+window.addEventListener("resize", ()=>{
 	setMenuType(navDom.clientWidth);
-}
+})
