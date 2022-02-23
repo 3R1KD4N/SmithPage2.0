@@ -43,9 +43,12 @@
 }
 .servicesSection{
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 20px;
 	padding: 0 5vw;
+}
+.sectionServices{
+	padding-top: 10vh;
 }
 .serviceCard{
 	width: 100%;
@@ -55,11 +58,43 @@
 	text-align: center;
 	color: black;
 }
-
+.servicesBackground{
+	background-image: url("../assets/stockPhotos/photo3.jpg");
+	height: 60vh;
+	padding-top: 50px;
+}
+@media(min-width: 1500px){
+	.servicesSection{
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
 @media (max-width: 1120px){
 	.cradGrid{
 		grid-template-columns: 1fr;
+		background-color: red;
 	}
+	.servicesSection{
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media(max-width:  550px){
+	.servicesSection{
+		grid-template-columns: 1fr;
+	}
+}
+
+.sectionServices{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.knowlege{
+	padding-bottom: 10vh;
+}
+.conocimientos-card{
+	width: 100%;
 }
 
 /*Colors -------------------------
