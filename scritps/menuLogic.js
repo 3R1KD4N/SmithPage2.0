@@ -9,6 +9,12 @@ const buttonSender = document.getElementById("buttonSender").addEventListener("c
 	sendEmail();
 });
 
+function setEmailSender (param){
+	for(param; param > 0; param--){
+		console.log(param);
+	}	
+}
+
 function sendEmail(){
 	const name = document.getElementById("floatingName");
 	const email = document.getElementById("floatingEmail");
@@ -49,7 +55,7 @@ function setMenuType(screenWidth){
 				<ul class="responiveLUl">
 					<li><a href="./aboutUs.html"><h2 class="menuTitle">Sobre Nosotros</h2></a></li>
                     <li><a href="./services.html"><h2 class="menuTitle">Servicios</h2></a></li>
-                    <li><a href=""><h2 class="menuTitle">Rational MTY</h2></a></li>
+                    <li><a href="./rationalmty.html"><h2 class="menuTitle">Rational MTY</h2></a></li>
                     <li><a href="./contact.html"><h2 class="menuTitle">Contacto</h2></a></li>
 				</ul>
 			</div>
@@ -75,7 +81,7 @@ function setMenuType(screenWidth){
 					</a>
 				</li>
 				<li class="acordionItem noVisible">
-					<a href="">
+					<a href="./rationalmty.html">
 						<h3 class="h3Text">Rational MTY</h3>
 						<div class="divisionBar"></div>
 					</a>

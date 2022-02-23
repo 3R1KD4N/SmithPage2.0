@@ -389,6 +389,23 @@ section{
     margin: 2vw;
     width: 20vw;
 }
+/*Rational Section*/
+.rationalSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+.rationalImg{
+    width: 55%;
+    padding: 0;
+    margin: 0;
+
+    align-items: center;
+    justify-content: center;
+}
 /*Media Querys Section -------------------------*/
 @media (min-width: 550px){
     .titleText{

@@ -16,7 +16,7 @@ function setMenuType(screenWidth){
 				<ul class="responiveLUl">
 					<li><a href="./aboutUs.html"><h2 class="menuTitle">Sobre Nosotros</h2></a></li>
                     <li><a href="./services.html"><h2 class="menuTitle">Servicios</h2></a></li>
-                    <li><a href=""><h2 class="menuTitle">Rational MTY</h2></a></li>
+                    <li><a href="./rationalmty.html"><h2 class="menuTitle">Rational MTY</h2></a></li>
                     <li><a href="./contact.html"><h2 class="menuTitle">Contacto</h2></a></li>
 				</ul>
 			</div>
@@ -42,7 +42,7 @@ function setMenuType(screenWidth){
 					</a>
 				</li>
 				<li class="acordionItem noVisible">
-					<a href="">
+					<a href="./rationalmty.html">
 						<h3 class="h3Text">Rational MTY</h3>
 						<div class="divisionBar"></div>
 					</a>
