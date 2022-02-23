@@ -1,0 +1,73 @@
+.ourSeriveHeader{
+	height: 50vh;
+}
+
+.ourServiceSection{
+	padding-top: 10vh;
+}
+
+.aboutUsTextSection{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	flex-direction: column;
+	padding:  5vw;
+}
+
+.aboutUsTextSection > .paragraphText {
+	font-size: 1.3rem;
+}
+.cradGrid{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	justify-content: center;
+
+	grid-gap: 1vw;
+	padding: 5vw;
+}
+.card{
+	transition: 0.5s;
+	align-items: flex-start;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+
+.cardVisionMision{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.servicesSection{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+	padding: 0 5vw;
+}
+.serviceCard{
+	width: 100%;
+}
+.pText{
+	font: 1.5rem;
+	text-align: center;
+	color: black;
+}
+
+@media (max-width: 1120px){
+	.cradGrid{
+		grid-template-columns: 1fr;
+	}
+}
+
+/*Colors -------------------------
+	Colocar colores correctos
+--------*/
+#misionCard{
+	background-color: rgb(245, 245, 245);
+}
+#visionCard{
+	background-color: rgb(245, 245, 245);
+}

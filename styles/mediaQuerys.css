@@ -1,0 +1,110 @@
+@media (max-width:  660px){
+    .card-title{
+        font-size: 1.5rem;
+    }
+    .cardUl > li {
+        font-size: 1.1rem;
+    }
+    .gridKnows{
+        width: 85%;
+    }
+    .brandsFlex{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .svgContainer{
+        height: 35px;
+        width: 35px;
+        margin-right: 1vw;
+    }
+}
+@media (min-width: 760px) {
+    .mainSectionLogo{
+        width: 60vw;
+    }
+}
+
+@media (max-width: 760px){
+    .aboutUsFlex{
+        flex-direction: column;
+    }
+    .imageDemoHolder{
+        width: 35vw;
+        height: 35vw;
+    }
+    .gridKnows{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        width: 70%;
+    }
+    .carousel-inner{
+        width: 80vw;
+        height: 40vw;
+    }
+    .brandsFlex{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 3vw;
+        grid-gap: 2vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .pharagraphFlex{
+        width: 50vw;
+    }
+}
+@media (max-width: 1200px){
+    .contactCardsInner{
+        width: 100%;
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+    }
+    .contactButton{
+        width: 90vw;
+        margin: 1vw 0;
+    }
+}
+@media (min-width: 1280px){
+    .card{
+        width: 15vw;
+    }
+    .gridKnows{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .card-body > h3{
+        font-size: 1.2rem;
+    }
+    .cardUl > li{
+        font-size: 0.8rem;
+    }
+    .brandsFlex{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 3vw;
+        grid-gap: 2vw;
+    }
+    .carousel-inner{
+        width: 250px;
+        height: 150px;
+    }
+    .headerContainer > svg{
+        padding-right: 2vw;
+        height: 16;
+        width: 16;
+    }
+}
+
+@media (min-width: 550px){
+    .contact-btn > h2{
+        font-size: 1.2rem;
+    }
+}
