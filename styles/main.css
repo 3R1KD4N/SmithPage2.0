@@ -410,6 +410,9 @@ section{
     text-align: center;
     font-size: 15px;
 }
+.serviceButton{
+    width: 100%;
+}
 /*Media Querys Section -------------------------*/
 @media (min-width: 550px){
     .titleText{
