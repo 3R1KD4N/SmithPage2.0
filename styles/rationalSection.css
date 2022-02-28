@@ -1,0 +1,102 @@
+.mainSectionRational{
+	margin-top: 5vh;
+	padding: 7vw;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 5vw;
+	background-color: rgb(220, 220, 220);
+}
+.rationalInfoContainer > h2{
+	color: black;
+	padding-bottom: 15px;
+}
+
+.rationalInfoContainer > P{
+	color: black;
+}
+
+.adventageSection > ul{
+	color: black;
+	list-style: none;
+	margin: 0;
+	padding: 10px 0px;
+}
+
+.adventageSection > h5{
+	color: black;
+}
+.adventageSection > ul > li{
+	display: flex;
+}
+.adventageSection > ul > li > p{
+	color: black;
+}
+
+h1, h2, h3, h4, h5, h6, p, a{
+	color: black;
+}
+.rationalServices{
+	padding: 7vw;
+}
+.rationalIcon{
+	width: 250px;
+	margin: 5px;
+	padding: 10px;
+}
+.servicesGrid{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	justify-content: center;
+
+	grid-gap: 5vw;
+	padding: 2vw 10vw;
+}
+.serviceCard{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+.serviceUl{
+	padding: 0;
+	margin: 0;
+}
+.serviceUl > li{
+	display: flex;
+}
+.infoGird{
+	margin-top: 5vh;
+	padding: 6vw;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 5vw;
+	background-color: rgb(220, 220, 220);
+}
+
+/*CARD SECTIONS*/
+.cardProduct{
+	width: 30vw;
+	margin: 1.5vw;
+	display: flex;
+	flex-direction: column;
+}
+.productIcon{
+	width: 17vw;
+}
+.gridContainer{
+	display: flex;
+	justify-content: center;
+
+	margin-top: 3.5vw;
+}
+.horizontal{
+	display: flex;
+	flex-direction: column;
+}
+.moreServicesGird{
+	padding: 0 5vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
