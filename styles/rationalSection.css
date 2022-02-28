@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6, p, a{
 	padding: 7vw;
 }
 .rationalIcon{
-	width: 250px;
+	width: 5vw;
 	margin: 5px;
 	padding: 10px;
 }
@@ -75,12 +75,6 @@ h1, h2, h3, h4, h5, h6, p, a{
 }
 
 /*CARD SECTIONS*/
-.cardProduct{
-	width: 30vw;
-	margin: 1.5vw;
-	display: flex;
-	flex-direction: column;
-}
 .productIcon{
 	width: 17vw;
 }
@@ -95,8 +89,115 @@ h1, h2, h3, h4, h5, h6, p, a{
 	flex-direction: column;
 }
 .moreServicesGird{
-	padding: 0 5vw;
-	display: flex;
-	flex-direction: row;
+	display: grid;
+	grid-template-columns: 19vw 19vw 19vw 19vw;
+	grid-gap: 20px;
+
 	justify-content: center;
+}
+.flexProduct{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 5vw;
+	grid-gap: 20px;
+}
+.product{
+	padding: 2vw;
+	border-radius: 10px;
+}
+.product:hover{
+	cursor: pointer;
+	transition: 0.5s;
+}
+.moreServicesGird{
+	padding-top: 5vw;
+}
+.card{
+	justify-content: start;
+}
+@media (min-width: 1221px){
+	.productIcon{
+		width: 125px;
+	}
+	.horizontal{
+		align-items: center;
+		padding: 30px;
+	}
+	.rationalIcon{
+		width: 250px;
+	}
+}
+@media (max-width:  1220px) {
+	.moreServicesGird{
+		grid-template-columns: 25vw 25vw 25vw;
+		grid-gap: 30px;
+	}
+	.productIcon{
+		width: 15vw;
+	}
+	.horizontal{
+		padding: 20px;
+	}
+	.card{
+		display: flex;
+		align-items: center;
+	}
+	.rationalIcon{
+		width: 200px;
+	}
+}
+
+@media (max-width:  900px) {
+	.moreServicesGird{
+		grid-template-columns: 40vw 40vw;
+		grid-gap: 30px;
+	}
+	.productIcon{
+		width: 15vw;
+	}
+	.rationalIcon{
+		width: 250px;
+	}
+}
+
+@media (max-width:  850px) {
+	.mainSectionRational{
+		grid-template-columns: 1fr;
+	}
+	.infoGird{
+		grid-template-columns: 1fr;
+	}
+	.productIcon{
+		width: 15vw;
+	}
+	.productIcon{
+		width: 170px;
+	}
+}
+
+@media (max-width: 580px){
+	.servicesGrid{
+		grid-template-columns: 1fr;
+		padding: 10vw 0;
+	}
+	.serviceCard{
+		width: 100%;
+	}
+	.flexProduct{
+		grid-template-columns: 1fr;
+	}
+	.moreServicesGird{
+		grid-template-columns: 1fr;
+		padding: 5vw;
+	}
+	.horizontal{
+		padding: 3vw;
+	}
+	.card{
+		display: flex;
+		align-items: stretch;
+	}
+	.productIcon{
+		width: 150px;
+	}
 }
