@@ -1,0 +1,218 @@
+.mainSectionRational{
+	margin-top: 5vh;
+	padding: 7vw;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 5vw;
+	background-color: rgb(220, 220, 220);
+}
+.rationalInfoContainer > h2{
+	color: black;
+	padding-bottom: 15px;
+}
+
+.rationalInfoContainer > P{
+	color: black;
+}
+
+.adventageSection > ul{
+	color: black;
+	list-style: none;
+	margin: 0;
+	padding: 10px 0px;
+}
+
+.adventageSection > h5{
+	color: black;
+}
+.adventageSection > ul > li{
+	display: flex;
+}
+.adventageSection > ul > li > p{
+	color: black;
+}
+
+h1, h2, h3, h4, h5, h6, p, a{
+	color: black;
+}
+.rationalServices{
+	padding: 6vw;
+}
+.rationalIcon{
+	width: 5vw;
+	margin: 5px;
+	padding: 10px;
+}
+.servicesGrid{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	justify-content: center;
+
+	grid-gap: 5vw;
+	padding: 2vw 10vw;
+}
+.serviceCard{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+.serviceUl{
+	padding: 0;
+	margin: 0;
+}
+.serviceUl > li{
+	display: flex;
+}
+.infoGird{
+	margin-top: 5vh;
+	padding: 6vw;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 5vw;
+	background-color: rgb(220, 220, 220);
+}
+
+/*CARD SECTIONS*/
+.productIcon{
+	width: 17vw;
+}
+.gridContainer{
+	display: flex;
+	justify-content: center;
+
+	margin-top: 3.5vw;
+}
+.horizontal{
+	display: flex;
+	flex-direction: column;
+}
+.moreServicesGird{
+	display: grid;
+	grid-template-columns: 19vw 19vw 19vw 19vw;
+	grid-gap: 20px;
+
+	justify-content: center;
+}
+.flexProduct{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 5vw;
+	grid-gap: 20px;
+}
+.product{
+	padding: 2vw;
+	border-radius: 10px;
+}
+.product:hover{
+	cursor: pointer;
+	transition: 0.5s;
+}
+.moreServicesGird{
+	padding-top: 5vw;
+}
+.card{
+	justify-content: start;
+}
+@media (min-width: 1221px){
+	.productIcon{
+		width: 125px;
+	}
+	.horizontal{
+		align-items: center;
+		padding: 25px;
+	}
+	.rationalIcon{
+		width: 250px;
+	}
+	.rationalImgContainer{
+		width: 500px;
+	}
+}
+@media (max-width:  1220px) {
+	.moreServicesGird{
+		grid-template-columns: 25vw 25vw 25vw;
+		grid-gap: 30px;
+	}
+	.productIcon{
+		width: 15vw;
+	}
+	.horizontal{
+		padding: 20px;
+	}
+	.card{
+		display: flex;
+		align-items: center;
+	}
+	.rationalIcon{
+		width: 200px;
+	}
+	.rationalImgContainer{
+		width: 400px;
+	}
+}
+
+@media (max-width:  900px) {
+	.moreServicesGird{
+		grid-template-columns: 40vw 40vw;
+		grid-gap: 30px;
+	}
+	.productIcon{
+		width: 15vw;
+	}
+	.rationalIcon{
+		width: 250px;
+	}
+	.rationalImgContainer{
+		width: 400px;
+	}
+}
+
+@media (max-width:  850px) {
+	.mainSectionRational{
+	    padding: 1px;
+		grid-template-columns: 1fr;
+	}
+	.infoGird{
+	    padding: 1px;
+		grid-template-columns: 1fr;
+	}
+	.productIcon{
+		width: 15vw;
+	}
+	.productIcon{
+		width: 170px;
+	}
+	.rationalImgContainer{
+		width: 80vw;
+	}
+}
+
+@media (max-width: 580px){
+	.servicesGrid{
+		grid-template-columns: 1fr;
+		padding: 10vw 0;
+	}
+	.serviceCard{
+		width: 100%;
+	}
+	.flexProduct{
+	    padding: 1px;
+		grid-template-columns: 1fr;
+	}
+	.moreServicesGird{
+		grid-template-columns: 1fr;
+		padding: 5vw;
+	}
+	.horizontal{
+		padding: 3vw;
+	}
+	.card{
+		display: flex;
+		align-items: stretch;
+	}
+	.productIcon{
+		width: 150px;
+	}
+}
